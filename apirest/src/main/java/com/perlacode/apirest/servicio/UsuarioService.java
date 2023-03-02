@@ -17,4 +17,9 @@ public class UsuarioService {
     public List<Usuario> obtenerUsuarios() {
         return usuarioRepository.findAll();
     }
+    
+    public Usuario insertarUsuario(Usuario usuario) {
+        return usuarioRepository.save(usuario);
+    }
+    
 }
